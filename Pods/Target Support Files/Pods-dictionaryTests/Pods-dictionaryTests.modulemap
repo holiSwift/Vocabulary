@@ -1,0 +1,6 @@
+framework module Pods_dictionaryTests {
+  umbrella header "Pods-dictionaryTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

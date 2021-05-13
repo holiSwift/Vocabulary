@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
