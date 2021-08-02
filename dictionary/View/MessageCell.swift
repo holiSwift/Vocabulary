@@ -10,20 +10,21 @@ import UIKit
 
 class MessageCell: UITableViewCell {
 
-    @IBOutlet weak var messageBubble: UIView!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var rightImageView: UIImageView!
-
+    @IBOutlet weak var listRow: UIView!
+    @IBOutlet weak var word: UIButton!
+    @IBOutlet weak var translate: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        messageBubble.layer.cornerRadius = messageBubble.frame.size.height / 5
-    }
+        
+        
+        listRow.transform = CGAffineTransform(scaleX: 1, y: -1)
+        listRow.layer.borderWidth = 1
+        listRow.layer.borderColor = UIColor(red:50/55, green:225/255, blue:227/255, alpha: 1).cgColor
+        listRow.layer.cornerRadius = 5
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-}
+
+    
+    }

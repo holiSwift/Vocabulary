@@ -46,7 +46,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateUI()
+//        updateUI()
+        print(someNewWord.text!)
     }
       
     
@@ -117,7 +118,6 @@ class ViewController: UIViewController {
                   
                 let  array = document!.data()
                 let counter = array!.count
-                print(counter)
                     
             if counter == 1 {
                         
@@ -132,7 +132,7 @@ class ViewController: UIViewController {
                 }
                             
             } else {
-                // A current word will deleted
+                // A current word will be deleted
 
                 let user =  Auth.auth().currentUser?.email
                 let wordForDelete  = self.someNewWord.text!

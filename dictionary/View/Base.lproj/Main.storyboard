@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yJv-bL-I7h">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yJv-bL-I7h">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController title="WelcomeVC" id="BD4-jN-g6b" customClass="WelcomeViewController" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9G-zK-Euc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="IWP-7v-bxl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-HJ-bUb">
-                                <rect key="frame" x="57" y="76" width="300" height="800"/>
+                                <rect key="frame" x="37.666666666666657" y="76" width="300" height="716"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jl-Y4-BhV">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="585"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-computer-icons-encapsulated-postscript-information-study-5abe247edb1873.5115890615224106228974" translatesAutoresizingMaskIntoConstraints="NO" id="u9i-ZO-ZX8">
-                                                <rect key="frame" x="0.0" y="20" width="300" height="629"/>
+                                                <rect key="frame" x="0.0" y="20" width="300" height="545"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -38,7 +38,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="KFo-fu-VSB">
-                                        <rect key="frame" x="0.0" y="669" width="300" height="131"/>
+                                        <rect key="frame" x="0.0" y="585" width="300" height="131"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXQ-6U-YFa">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -104,14 +104,14 @@
             <objects>
                 <viewController title="LoginVC" modalPresentationStyle="fullScreen" id="MbG-XX-mbw" customClass="LoginViewController" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yTq-Gf-3Wk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="lyz-3J-uKF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="m6q-Fz-ssI">
-                                <rect key="frame" x="57" y="306" width="300" height="284"/>
+                                <rect key="frame" x="37.666666666666657" y="264" width="300" height="284"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@4.com" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RzE-xm-TZJ">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -182,14 +182,14 @@
             <objects>
                 <viewController title="RegisterVC" modalPresentationStyle="fullScreen" id="Y4U-cJ-xuk" customClass="RegisterViewController" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5V5-Uq-Stu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="Eqm-Dl-YyP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="QBI-lH-veE">
-                                <rect key="frame" x="57" y="272.5" width="300" height="351"/>
+                                <rect key="frame" x="37.666666666666657" y="230.66666666666663" width="300" height="351"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kVh-Ya-rCe">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -203,14 +203,14 @@
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcx-D1-vT2">
-                                        <rect key="frame" x="0.0" y="101" width="300" height="49"/>
+                                        <rect key="frame" x="0.0" y="101.00000000000003" width="300" height="49"/>
                                         <color key="backgroundColor" red="0.96865973189999999" green="0.97496712559999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.25997686390000002" green="0.44069471960000001" blue="0.65184217690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TPu-z8-Gvk">
-                                        <rect key="frame" x="0.0" y="201" width="300" height="49"/>
+                                        <rect key="frame" x="0.0" y="201.00000000000003" width="300" height="49"/>
                                         <color key="backgroundColor" red="0.96865973189999999" green="0.97496712559999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.25997686390000002" green="0.44069471960000001" blue="0.65184217690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
@@ -257,24 +257,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJy-a0-khs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Wiv-87-2Nd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="59.852216748768477" y="-372"/>
+            <point key="canvasLocation" x="60" y="-290"/>
         </scene>
         <!--RusVC-->
         <scene sceneID="LX3-dH-tG8">
             <objects>
                 <viewController id="Scb-JH-XEm" customClass="RusVC" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KQC-1x-xs5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-JW-67x">
-                                <rect key="frame" x="0.0" y="-20" width="414" height="916"/>
+                                <rect key="frame" x="0.0" y="-20" width="375" height="832"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="jWN-rB-W4U">
-                                        <rect key="frame" x="-46" y="0.0" width="511" height="916"/>
+                                        <rect key="frame" x="-46" y="0.0" width="472" height="832"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="a6P-RY-ljg">
-                                        <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                        <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-Et-dkC">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -313,13 +313,23 @@
                                             <constraint firstAttribute="width" constant="300" id="Jdc-6b-FTg"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEm-Fd-RYj">
+                                        <rect key="frame" x="160.66666666666666" y="736" width="54" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="List"/>
+                                        <connections>
+                                            <segue destination="Dig-lB-5Zo" kind="show" id="MrV-aV-Xkm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="jWN-rB-W4U" secondAttribute="bottom" id="4zw-dk-9cC"/>
                                     <constraint firstItem="a6P-RY-ljg" firstAttribute="centerX" secondItem="jWN-rB-W4U" secondAttribute="centerX" constant="-2.5" id="5pP-7u-NG8"/>
+                                    <constraint firstItem="VEm-Fd-RYj" firstAttribute="centerX" secondItem="AL3-JW-67x" secondAttribute="centerX" id="Lnv-mF-cpY"/>
                                     <constraint firstItem="a6P-RY-ljg" firstAttribute="centerY" secondItem="jWN-rB-W4U" secondAttribute="centerY" constant="-10" id="Q0t-MB-W9V"/>
                                     <constraint firstItem="jWN-rB-W4U" firstAttribute="top" secondItem="AL3-JW-67x" secondAttribute="top" id="UQ3-jm-eZc"/>
+                                    <constraint firstAttribute="bottom" secondItem="VEm-Fd-RYj" secondAttribute="bottom" constant="42" id="aaO-EJ-CbU"/>
                                     <constraint firstItem="jWN-rB-W4U" firstAttribute="leading" secondItem="AL3-JW-67x" secondAttribute="leading" constant="-46" id="dKM-UG-4sR"/>
                                     <constraint firstAttribute="trailing" secondItem="jWN-rB-W4U" secondAttribute="trailing" constant="-51" id="pri-Vf-oFp"/>
                                 </constraints>
@@ -343,21 +353,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gei-hB-1Jk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608.6956521739132" y="-588.61607142857144"/>
+            <point key="canvasLocation" x="1790" y="-322"/>
         </scene>
         <!--CheckVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="CheckVC" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="m8G-cP-WaE">
-                                <rect key="frame" x="-44" y="0.0" width="502" height="896"/>
+                                <rect key="frame" x="-44" y="0.0" width="463" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="gri-De-eVL">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxE-2A-biB">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -400,25 +410,33 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HM1-pP-afn">
-                                <rect key="frame" x="311" y="778" width="50" height="50"/>
+                                <rect key="frame" x="272" y="694" width="50" height="50"/>
                                 <state key="normal" image="плюс"/>
                                 <connections>
                                     <segue destination="896-we-yna" kind="show" id="bM0-vm-I9H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0t-Qb-PJ6">
-                                <rect key="frame" x="57" y="778" width="50" height="50"/>
+                                <rect key="frame" x="57" y="694" width="50" height="50"/>
                                 <state key="normal" image="минус"/>
                                 <connections>
                                     <action selector="deleteBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7CY-Np-Tr4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ae-tS-PEZ">
-                                <rect key="frame" x="296" y="138" width="68" height="54"/>
+                                <rect key="frame" x="257" y="138" width="68" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="RUS"/>
                                 <connections>
                                     <segue destination="Scb-JH-XEm" kind="show" id="sf8-x3-dah"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-Ml-xbC">
+                                <rect key="frame" x="160.66666666666666" y="695" width="54" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="List"/>
+                                <connections>
+                                    <segue destination="GOK-l6-x2P" kind="show" id="bRe-vS-Awm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -430,7 +448,9 @@
                             <constraint firstItem="m8G-cP-WaE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dxt-gC-HOF"/>
                             <constraint firstItem="gri-De-eVL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ezr-66-GI2"/>
                             <constraint firstItem="m8G-cP-WaE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="44" id="G5E-n0-8Er"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7qL-Ml-xbC" secondAttribute="bottom" constant="29" id="PtO-pa-egd"/>
                             <constraint firstItem="gri-De-eVL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QdR-mj-9Sv"/>
+                            <constraint firstItem="7qL-Ml-xbC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TRy-Ir-Y6F"/>
                             <constraint firstItem="e0t-Qb-PJ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="YYu-l2-aaJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HM1-pP-afn" secondAttribute="trailing" constant="53" id="ZRe-LY-Kpg"/>
                             <constraint firstItem="m8G-cP-WaE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-44" id="rh4-us-5go"/>
@@ -463,14 +483,14 @@
             <objects>
                 <viewController storyboardIdentifier="SecondViewController" title="AddVC" modalPresentationStyle="fullScreen" id="896-we-yna" customClass="AddNewWordVC" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uRN-So-Kpo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="2EM-sP-SJP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="Me2-IC-TaQ">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJO-v8-e9v">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -529,7 +549,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDI-Df-DsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1636.2318840579712" y="56.919642857142854"/>
+            <point key="canvasLocation" x="1791" y="361"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="5Z6-lh-xCo">
+            <objects>
+                <viewController id="GOK-l6-x2P" customClass="ListViewController" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JK0-h7-7fa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="2Na-JN-ryr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wRz-S8-1L9">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pxk-aG-f1b"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Na-JN-ryr" firstAttribute="top" secondItem="JK0-h7-7fa" secondAttribute="top" id="18t-Vz-vbc"/>
+                            <constraint firstItem="pxk-aG-f1b" firstAttribute="trailing" secondItem="wRz-S8-1L9" secondAttribute="trailing" id="5Fw-So-e4O"/>
+                            <constraint firstItem="2Na-JN-ryr" firstAttribute="leading" secondItem="JK0-h7-7fa" secondAttribute="leading" id="XYm-3g-oAI"/>
+                            <constraint firstItem="pxk-aG-f1b" firstAttribute="bottom" secondItem="wRz-S8-1L9" secondAttribute="bottom" constant="-34" id="cdM-r2-Fkc"/>
+                            <constraint firstAttribute="trailing" secondItem="2Na-JN-ryr" secondAttribute="trailing" id="cu0-g1-7fg"/>
+                            <constraint firstItem="wRz-S8-1L9" firstAttribute="leading" secondItem="pxk-aG-f1b" secondAttribute="leading" id="s41-Xn-xes"/>
+                            <constraint firstAttribute="bottom" secondItem="2Na-JN-ryr" secondAttribute="bottom" id="u7t-I1-PzI"/>
+                            <constraint firstItem="wRz-S8-1L9" firstAttribute="top" secondItem="pxk-aG-f1b" secondAttribute="top" id="uZC-N9-oBe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jBb-Tg-cL5"/>
+                    <connections>
+                        <outlet property="tableView" destination="wRz-S8-1L9" id="4Lh-KD-cme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySO-aD-OFv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="721"/>
+        </scene>
+        <!--Rus List View Controller-->
+        <scene sceneID="iKa-Ra-Bnt">
+            <objects>
+                <viewController id="Dig-lB-5Zo" customClass="RusListViewController" customModule="dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FRC-ph-g4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peaceful-blur-background-ipad-air-wallpaper-ilikewallpaper_com_2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="omm-Qh-h2h">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="guQ-us-2bM">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4BS-c8-3Rd"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="guQ-us-2bM" firstAttribute="top" secondItem="4BS-c8-3Rd" secondAttribute="top" id="Lqf-Pk-5VI"/>
+                            <constraint firstItem="guQ-us-2bM" firstAttribute="trailing" secondItem="4BS-c8-3Rd" secondAttribute="trailing" id="Mte-Hs-DNg"/>
+                            <constraint firstAttribute="bottom" secondItem="guQ-us-2bM" secondAttribute="bottom" id="OIm-Ai-O0t"/>
+                            <constraint firstItem="guQ-us-2bM" firstAttribute="leading" secondItem="4BS-c8-3Rd" secondAttribute="leading" id="Wff-9c-xwb"/>
+                            <constraint firstItem="omm-Qh-h2h" firstAttribute="leading" secondItem="4BS-c8-3Rd" secondAttribute="leading" id="XBd-xB-Caw"/>
+                            <constraint firstAttribute="bottom" secondItem="omm-Qh-h2h" secondAttribute="bottom" id="pqH-Cv-9SQ"/>
+                            <constraint firstItem="omm-Qh-h2h" firstAttribute="trailing" secondItem="4BS-c8-3Rd" secondAttribute="trailing" id="ptD-8B-Rdl"/>
+                            <constraint firstItem="omm-Qh-h2h" firstAttribute="top" secondItem="FRC-ph-g4Z" secondAttribute="top" id="sah-6n-zaK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ySE-mf-trL"/>
+                    <connections>
+                        <outlet property="secondTableView" destination="guQ-us-2bM" id="a8T-MT-VFG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ln3-Qr-W7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-605.17241379310349"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dxV-q5-qPD">
@@ -537,7 +633,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yJv-bL-I7h" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Duj-Yn-0TN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -12,6 +12,10 @@ struct K {
         static let collectionName = "UserVocabulary"
         static let senderField = "userEmail"
         static let bodyField = "usersWordBody"
+        static let cellNibName = "MessageCell"
+        static let cellIdentifier = "ReusableCell"
+       
+    
        
     }
 }
