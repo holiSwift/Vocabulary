@@ -78,6 +78,8 @@ class ViewController: UIViewController {
                 self.inputTranslate.isHidden = true
                 self.deleteBtn.isHidden = true
                 self.someNewWord.adjustsFontSizeToFitWidth = true
+                self.someNewWord.text = "Add your first word to translate"
+                updateUI()
 
                    }
          }
@@ -97,12 +99,19 @@ class ViewController: UIViewController {
 
             if translateField == currentTranslate {
                 self.inputTranslate.backgroundColor = UIColor.green
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
+                    self.inputTranslate.backgroundColor = UIColor.clear
+                    updateUI()
+                }
             } else {
                 self.inputTranslate.backgroundColor = UIColor.red
-                self.inputTranslate.shake()
-           }
-         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.updateUI), userInfo: nil, repeats: false)
-         }
+                self.inputTranslate.shakingAndRedBg()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
+                    self.inputTranslate.backgroundColor = UIColor.clear
+                    self.inputTranslate.text = ""
+                }
+            }
+        }
     }
 
     func deletCurrentWord () {
@@ -183,20 +192,6 @@ class ViewController: UIViewController {
 }
 
 
-    
-    extension UITextField {
-        func shake() {
-            let animation = CABasicAnimation(keyPath: "position")
-            animation.duration = 0.05
-            animation.repeatCount = 5
-            animation.autoreverses = true
-            animation.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
-            animation.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
-            layer.add(animation, forKey: "position")
-        }
-    }
-    
-    
     
 
 

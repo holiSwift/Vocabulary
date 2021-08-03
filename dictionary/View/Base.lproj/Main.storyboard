@@ -227,9 +227,7 @@
                                             <color key="titleColor" red="0.65826809409999998" green="0.63242805000000002" blue="0.56469637159999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTe-h2-of6"/>
-                                            <action selector="registerBtnWasPressed:" destination="Wiv-87-2Nd" eventType="touchUpInside" id="CX6-uP-69j"/>
-                                            <action selector="registerPressed:" destination="Y4U-cJ-xuk" eventType="touchUpInside" id="8wT-hd-rsh"/>
+                                            <action selector="registerPressed:" destination="Y4U-cJ-xuk" eventType="touchUpInside" id="2kQ-xI-4bd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -251,11 +249,11 @@
                     <connections>
                         <outlet property="emailTextfield" destination="kVh-Ya-rCe" id="9vz-ef-OQi"/>
                         <outlet property="passwordTextfield" destination="jcx-D1-vT2" id="FRq-DH-ZLI"/>
+                        <outlet property="retypePassword" destination="TPu-z8-Gvk" id="nyN-lo-Xrz"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="RegisterSegue" id="qBj-QW-gXe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJy-a0-khs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Wiv-87-2Nd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="60" y="-290"/>
         </scene>

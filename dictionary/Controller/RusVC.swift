@@ -92,18 +92,18 @@ class RusVC: UIViewController {
                     if translateField == key {
                         self.engField.backgroundColor = UIColor.green
                     } else {
-                        self.engField.backgroundColor = UIColor.red
-                        self.engField.shaking()
+//                        self.engField.backgroundColor = UIColor.red
+                        self.engField.shakingAndRedBg()
                     }
                        
-                 Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.updateUI), userInfo: nil, repeats: false)
+                 
                  }
             }
     
     }
     
     extension UITextField {
-        func shaking() {
+        func shakingAndRedBg() {
             let animation = CABasicAnimation(keyPath: "position")
             animation.duration = 0.05
             animation.repeatCount = 5
@@ -111,6 +111,9 @@ class RusVC: UIViewController {
             animation.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
             animation.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
             layer.add(animation, forKey: "position")
+            layer.backgroundColor = CGColor.init(red: 255, green: 0, blue: 0, alpha: 1)
+            
         }
+        
     }
 

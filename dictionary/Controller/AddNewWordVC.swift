@@ -34,7 +34,7 @@ class AddNewWordVC: UIViewController {
     func addWordToList() {
         
         if let usersWordBody = wordField.text?.lowercased().trimmingCharacters(in: .whitespaces),
-           let translateOfUserWord = translateField.text?.lowercased().trimmingCharacters(in: .whitespaces),
+           let translateOfUserWord = translateField.text?.lowercased().trimmingCharacters(in: .whitespaces).trimmingCharacters(in: .whitespacesAndNewlines),
            let user =  Auth.auth().currentUser?.email  {
             
                 let docRef = db.collection(K.FStore.collectionName).document(user)

@@ -60,6 +60,8 @@ class RusListViewController: UIViewController, UITableViewDataSource {
                         
                         if let key = item.key as? String, let translate = item.value as? String {
                             
+                            
+                            
                             let newMessage = Message(key: key, value: translate)
                             self.messages.append(newMessage)
                         }
