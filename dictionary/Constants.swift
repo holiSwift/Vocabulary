@@ -14,8 +14,6 @@ struct K {
         static let bodyField = "usersWordBody"
         static let cellNibName = "MessageCell"
         static let cellIdentifier = "ReusableCell"
-       
-    
-       
+        
     }
 }

@@ -76,13 +76,21 @@ class AddNewWordVC: UIViewController {
     
     
     @IBAction func enterBtn(_ sender: UIButton) {
-            let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you entered the correct data?", preferredStyle: .alert)
-            let yes = UIAlertAction(title: "YES", style: .default, handler: { [self] (action) -> Void in addWordToList()})
-            let check = UIAlertAction(title: "CHECK", style: .default, handler: {  (action) -> Void in })
-            dialogMessage.addAction(yes)
-            dialogMessage.addAction(check)
-            self.present(dialogMessage, animated: true, completion: nil)
-                        
+//            let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you entered the correct data?", preferredStyle: .alert)
+//            let yes = UIAlertAction(title: "YES", style: .default, handler: { [self] (action) -> Void in addWordToList()})
+//            let check = UIAlertAction(title: "CHECK", style: .default, handler: {  (action) -> Void in })
+//            dialogMessage.addAction(yes)
+//            dialogMessage.addAction(check)
+//            self.present(dialogMessage, animated: true, completion: nil)
+        self.wordField.backgroundColor = UIColor.green
+        self.translateField.backgroundColor = UIColor.green
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
+           
+            self.wordField.backgroundColor = UIColor.clear
+            self.translateField.backgroundColor = UIColor.clear
+            addWordToList()
+        }
+        
     }
 }
 

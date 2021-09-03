@@ -15,12 +15,20 @@ class MessageCellReverb: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
         row.transform = CGAffineTransform(scaleX: 1, y: -1)
         row.layer.borderWidth = 1
         row.layer.borderColor = UIColor(red:50/55, green:225/255, blue:227/255, alpha: 1).cgColor
         row.layer.cornerRadius = 5
     }
 
-
+//    @IBAction func translateBtn(_ sender: Any) {
+//        print("translate")
+//    }
+//
+//    @IBAction func word(_ sender: Any) {
+//        print("word")
+//    }
     
 }

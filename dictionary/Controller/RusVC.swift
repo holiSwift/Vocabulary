@@ -75,7 +75,7 @@ class RusVC: UIViewController {
         
                 let user =  Auth.auth().currentUser?.email
                 let docRef = db.collection(K.FStore.collectionName).document(user!)
-                docRef.getDocument { (document, error) in
+        docRef.getDocument { [self] (document, error) in
                     let document = document
                     let label = self.rusWord.text!
                     let translateField = self.engField.text!.lowercased().trimmingCharacters(in: .whitespaces)
@@ -91,9 +91,16 @@ class RusVC: UIViewController {
 
                     if translateField == key {
                         self.engField.backgroundColor = UIColor.green
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
+                            self.engField.backgroundColor = UIColor.clear
+                            updateUI()
+                        }
                     } else {
-//                        self.engField.backgroundColor = UIColor.red
+
                         self.engField.shakingAndRedBg()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
+                            self.engField.backgroundColor = UIColor.clear
+                        }
                     }
                        
                  
@@ -102,18 +109,19 @@ class RusVC: UIViewController {
     
     }
     
-    extension UITextField {
-        func shakingAndRedBg() {
-            let animation = CABasicAnimation(keyPath: "position")
-            animation.duration = 0.05
-            animation.repeatCount = 5
-            animation.autoreverses = true
-            animation.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
-            animation.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
-            layer.add(animation, forKey: "position")
+extension UITextField {
+    func shakingAndRedBg() {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.05
+        animation.repeatCount = 5
+        animation.autoreverses = true
+        animation.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
+        animation.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
+        layer.add(animation, forKey: "position")
+
             layer.backgroundColor = CGColor.init(red: 255, green: 0, blue: 0, alpha: 1)
-            
         }
-        
-    }
+
+    
+}
 

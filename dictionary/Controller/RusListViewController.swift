@@ -25,8 +25,8 @@ class RusListViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.FStore.cellIdentifier, for: indexPath) as! MessageCellReverb
-        cell.word.setTitle(message.key, for: .normal)
-        cell.translate.setTitle(message.value, for: .normal)
+               cell.word.setTitle(message.key, for: .normal)
+               cell.translate.setTitle(message.value, for: .normal)
             
         return cell
     }
@@ -34,14 +34,12 @@ class RusListViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        secondTableView.register(UINib(nibName: "MessageCellReverb", bundle: nil), forCellReuseIdentifier: "ReusableCell")
-        secondTableView.dataSource = self
-        loadMessages()
-        
         secondTableView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        secondTableView.dataSource = self
+        secondTableView.register(UINib(nibName: "MessageCellReverb", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        
+        loadMessages()
 
-        // Do any additional setup after loading the view.
     }
     
     func loadMessages() {
@@ -59,9 +57,7 @@ class RusListViewController: UIViewController, UITableViewDataSource {
                     for item in snapshotDocuments {
                         
                         if let key = item.key as? String, let translate = item.value as? String {
-                            
-                            
-                            
+                                                   
                             let newMessage = Message(key: key, value: translate)
                             self.messages.append(newMessage)
                         }
@@ -77,5 +73,4 @@ class RusListViewController: UIViewController, UITableViewDataSource {
                 }
             }
         }
-
 }

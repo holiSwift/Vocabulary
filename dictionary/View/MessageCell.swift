@@ -25,6 +25,9 @@ class MessageCell: UITableViewCell {
 
     }
     
-
+    @IBAction func wordBtn(_ sender: Any) {
+        print("word")
+    }
+    
     
     }

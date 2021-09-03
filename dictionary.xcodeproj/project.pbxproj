@@ -16,16 +16,17 @@
 		E861BEF92624CB1400664867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E861BEF82624CB1400664867 /* Assets.xcassets */; };
 		E872DE9C261243B30089826B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E872DE9A261243B30089826B /* LoginViewController.swift */; };
 		E8768C5A25ED887F0017C8E7 /* AddNewWordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8768C5925ED887F0017C8E7 /* AddNewWordVC.swift */; };
+		E87ED16D26D68D9800BA0417 /* NexrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87ED16C26D68D9800BA0417 /* NexrTableViewCell.swift */; };
 		E8881E55261222AF009EE792 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8881E54261222AF009EE792 /* GoogleService-Info.plist */; };
 		E88D587A2621C608004461E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88D58792621C607004461E5 /* WelcomeViewController.swift */; };
+		E89BABF626E2122000C94634 /* RusTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89BABF526E2122000C94634 /* RusTVCell.swift */; };
 		E8AB413A264D9D8500896F82 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AB4139264D9D8500896F82 /* RegisterViewController.swift */; };
 		E8C6E1C226455FC100B0FE6D /* RusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C6E1C126455FC100B0FE6D /* RusVC.swift */; };
 		E8C7D1E72626039800239FFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C7D1E62626039800239FFA /* Constants.swift */; };
 		E8CDC3B025E8F9DA00D9644A /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDC3AF25E8F9DA00D9644A /* Vocabulary.swift */; };
+		E8D19FE326BD58A900F6DBA5 /* RowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D19FE126BD58A900F6DBA5 /* RowViewCell.swift */; };
+		E8D19FE426BD58A900F6DBA5 /* RowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8D19FE226BD58A900F6DBA5 /* RowViewCell.xib */; };
 		E8D59D312654482400E5187D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D59D302654482400E5187D /* Message.swift */; };
-		E8D59D362654489A00E5187D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D59D352654489A00E5187D /* ListViewController.swift */; };
-		E8D59D3C265448A400E5187D /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D59D3A265448A400E5187D /* MessageCell.swift */; };
-		E8D59D3D265448A400E5187D /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8D59D3B265448A400E5187D /* MessageCell.xib */; };
 		E8DB192D25E1517B004FB85E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB192C25E1517B004FB85E /* AppDelegate.swift */; };
 		E8DB192F25E1517B004FB85E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB192E25E1517B004FB85E /* SceneDelegate.swift */; };
 		E8DB193125E1517B004FB85E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB193025E1517B004FB85E /* ViewController.swift */; };
@@ -68,16 +69,17 @@
 		E861BEF82624CB1400664867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E872DE9A261243B30089826B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E8768C5925ED887F0017C8E7 /* AddNewWordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWordVC.swift; sourceTree = "<group>"; };
+		E87ED16C26D68D9800BA0417 /* NexrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexrTableViewCell.swift; sourceTree = "<group>"; };
 		E8881E54261222AF009EE792 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E88D58792621C607004461E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E89BABF526E2122000C94634 /* RusTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RusTVCell.swift; sourceTree = "<group>"; };
 		E8AB4139264D9D8500896F82 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E8C6E1C126455FC100B0FE6D /* RusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RusVC.swift; sourceTree = "<group>"; };
 		E8C7D1E62626039800239FFA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E8CDC3AF25E8F9DA00D9644A /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
+		E8D19FE126BD58A900F6DBA5 /* RowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewCell.swift; sourceTree = "<group>"; };
+		E8D19FE226BD58A900F6DBA5 /* RowViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RowViewCell.xib; sourceTree = "<group>"; };
 		E8D59D302654482400E5187D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		E8D59D352654489A00E5187D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		E8D59D3A265448A400E5187D /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		E8D59D3B265448A400E5187D /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		E8DB192925E1517B004FB85E /* dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DB192C25E1517B004FB85E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DB192E25E1517B004FB85E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,8 +156,9 @@
 				E88D58792621C607004461E5 /* WelcomeViewController.swift */,
 				E872DE9A261243B30089826B /* LoginViewController.swift */,
 				E8AB4139264D9D8500896F82 /* RegisterViewController.swift */,
-				E8D59D352654489A00E5187D /* ListViewController.swift */,
 				E80B23BE26B750B600BC626D /* RusListViewController.swift */,
+				E87ED16C26D68D9800BA0417 /* NexrTableViewCell.swift */,
+				E89BABF526E2122000C94634 /* RusTVCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,11 +166,11 @@
 		E86A812425E28FD400C9F1D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E8D59D3A265448A400E5187D /* MessageCell.swift */,
-				E8D59D3B265448A400E5187D /* MessageCell.xib */,
 				E8DB193225E1517B004FB85E /* Main.storyboard */,
 				E80B23C526B834CC00BC626D /* MessageCellReverb.swift */,
 				E80B23C626B834CC00BC626D /* MessageCellReverb.xib */,
+				E8D19FE126BD58A900F6DBA5 /* RowViewCell.swift */,
+				E8D19FE226BD58A900F6DBA5 /* RowViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,9 +349,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D59D3D265448A400E5187D /* MessageCell.xib in Resources */,
 				E80B23C826B834CC00BC626D /* MessageCellReverb.xib in Resources */,
 				E8DB193925E1517C004FB85E /* LaunchScreen.storyboard in Resources */,
+				E8D19FE426BD58A900F6DBA5 /* RowViewCell.xib in Resources */,
 				E8881E55261222AF009EE792 /* GoogleService-Info.plist in Resources */,
 				E861BEF92624CB1400664867 /* Assets.xcassets in Resources */,
 				E8DB193425E1517B004FB85E /* Main.storyboard in Resources */,
@@ -481,10 +484,9 @@
 			files = (
 				E872DE9C261243B30089826B /* LoginViewController.swift in Sources */,
 				E80B23BF26B750B600BC626D /* RusListViewController.swift in Sources */,
+				E87ED16D26D68D9800BA0417 /* NexrTableViewCell.swift in Sources */,
 				E8AB413A264D9D8500896F82 /* RegisterViewController.swift in Sources */,
-				E8D59D362654489A00E5187D /* ListViewController.swift in Sources */,
 				E88D587A2621C608004461E5 /* WelcomeViewController.swift in Sources */,
-				E8D59D3C265448A400E5187D /* MessageCell.swift in Sources */,
 				E8C6E1C226455FC100B0FE6D /* RusVC.swift in Sources */,
 				E8CDC3B025E8F9DA00D9644A /* Vocabulary.swift in Sources */,
 				E8DB193125E1517B004FB85E /* ViewController.swift in Sources */,
@@ -494,6 +496,8 @@
 				E80B23C726B834CC00BC626D /* MessageCellReverb.swift in Sources */,
 				E8DB192F25E1517B004FB85E /* SceneDelegate.swift in Sources */,
 				E8C7D1E72626039800239FFA /* Constants.swift in Sources */,
+				E89BABF626E2122000C94634 /* RusTVCell.swift in Sources */,
+				E8D19FE326BD58A900F6DBA5 /* RowViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

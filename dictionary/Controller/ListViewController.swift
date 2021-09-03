@@ -25,7 +25,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = messages[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.FStore.cellIdentifier, for: indexPath) as! MessageCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.FStore.cellIdentifier, for: indexPath) as! RowViewCell
         cell.word.setTitle(message.key, for: .normal)
         cell.translate.setTitle(message.value, for: .normal)
             
@@ -37,7 +37,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         tableView.transform = CGAffineTransform(scaleX: 1, y: -1)
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        tableView.register(UINib(nibName: "RowViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         loadMessages()
      
     }
