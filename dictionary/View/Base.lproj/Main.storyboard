@@ -114,7 +114,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="m6q-Fz-ssI">
                                 <rect key="frame" x="37.666666666666657" y="264" width="300" height="284"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@4.com" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RzE-xm-TZJ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RzE-xm-TZJ">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                         <color key="backgroundColor" red="0.96865973189999999" green="0.97496712559999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -124,7 +124,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dC-Tu-m7p">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dC-Tu-m7p">
                                         <rect key="frame" x="0.0" y="117" width="300" height="50"/>
                                         <color key="backgroundColor" red="0.96865973189999999" green="0.97496712559999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>

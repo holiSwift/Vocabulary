@@ -52,10 +52,13 @@ class ENGTableViewCell: UITableViewController, UISearchBarDelegate, UISearchCont
                 print(e)
             } else {
                 if let snapshotDocuments = querySnapshot?.data(){
+                    var count = 0
                     for item in snapshotDocuments {
+                        count += 1
                         if let key = item.key as? String, let translate = item.value as? String {
                             let newMessage = Message(key: key, value: translate)
                             self.messages.append(newMessage)
+                            print(count)
                         }
                     }
                     DispatchQueue.main.async { [self] in
