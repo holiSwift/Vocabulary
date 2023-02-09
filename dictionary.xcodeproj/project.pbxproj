@@ -14,19 +14,17 @@
 		E872DE9C261243B30089826B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E872DE9A261243B30089826B /* LoginViewController.swift */; };
 		E8881E55261222AF009EE792 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8881E54261222AF009EE792 /* GoogleService-Info.plist */; };
 		E88D587A2621C608004461E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88D58792621C607004461E5 /* WelcomeViewController.swift */; };
-		E89BABF626E2122000C94634 /* RUSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89BABF526E2122000C94634 /* RUSTableViewCell.swift */; };
 		E8AB413A264D9D8500896F82 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AB4139264D9D8500896F82 /* RegisterViewController.swift */; };
-		E8C6E1C226455FC100B0FE6D /* RUSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C6E1C126455FC100B0FE6D /* RUSViewController.swift */; };
 		E8C7D1E72626039800239FFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C7D1E62626039800239FFA /* Constants.swift */; };
 		E8D59D312654482400E5187D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D59D302654482400E5187D /* Message.swift */; };
 		E8DB192D25E1517B004FB85E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB192C25E1517B004FB85E /* AppDelegate.swift */; };
 		E8DB192F25E1517B004FB85E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB192E25E1517B004FB85E /* SceneDelegate.swift */; };
-		E8DB193125E1517B004FB85E /* ENGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB193025E1517B004FB85E /* ENGViewController.swift */; };
+		E8DB193125E1517B004FB85E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB193025E1517B004FB85E /* ViewController.swift */; };
 		E8DB193425E1517B004FB85E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DB193225E1517B004FB85E /* Main.storyboard */; };
 		E8DB193925E1517C004FB85E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DB193725E1517C004FB85E /* LaunchScreen.storyboard */; };
 		E8DB194425E1517D004FB85E /* dictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB194325E1517D004FB85E /* dictionaryTests.swift */; };
 		E8DB194F25E1517D004FB85E /* dictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB194E25E1517D004FB85E /* dictionaryUITests.swift */; };
-		E8E5B7AC27035CF10046D3F8 /* ENGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E5B7AB27035CF10046D3F8 /* ENGTableViewCell.swift */; };
+		E8E5B7AC27035CF10046D3F8 /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E5B7AB27035CF10046D3F8 /* LibraryTableViewCell.swift */; };
 		E8E5B7B0270388330046D3F8 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E5B7AF270388330046D3F8 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,15 +59,13 @@
 		E872DE9A261243B30089826B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E8881E54261222AF009EE792 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E88D58792621C607004461E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		E89BABF526E2122000C94634 /* RUSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUSTableViewCell.swift; sourceTree = "<group>"; };
 		E8AB4139264D9D8500896F82 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		E8C6E1C126455FC100B0FE6D /* RUSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUSViewController.swift; sourceTree = "<group>"; };
 		E8C7D1E62626039800239FFA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E8D59D302654482400E5187D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E8DB192925E1517B004FB85E /* dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DB192C25E1517B004FB85E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DB192E25E1517B004FB85E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8DB193025E1517B004FB85E /* ENGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENGViewController.swift; sourceTree = "<group>"; };
+		E8DB193025E1517B004FB85E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8DB193325E1517B004FB85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8DB193825E1517C004FB85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8DB193A25E1517C004FB85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,7 +75,7 @@
 		E8DB194A25E1517D004FB85E /* dictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DB194E25E1517D004FB85E /* dictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionaryUITests.swift; sourceTree = "<group>"; };
 		E8DB195025E1517D004FB85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8E5B7AB27035CF10046D3F8 /* ENGTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENGTableViewCell.swift; sourceTree = "<group>"; };
+		E8E5B7AB27035CF10046D3F8 /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 		E8E5B7AF270388330046D3F8 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,10 +134,8 @@
 		E86A812325E28F9600C9F1D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E8C6E1C126455FC100B0FE6D /* RUSViewController.swift */,
-				E89BABF526E2122000C94634 /* RUSTableViewCell.swift */,
-				E8E5B7AB27035CF10046D3F8 /* ENGTableViewCell.swift */,
-				E8DB193025E1517B004FB85E /* ENGViewController.swift */,
+				E8E5B7AB27035CF10046D3F8 /* LibraryTableViewCell.swift */,
+				E8DB193025E1517B004FB85E /* ViewController.swift */,
 				E8AB4139264D9D8500896F82 /* RegisterViewController.swift */,
 				E872DE9A261243B30089826B /* LoginViewController.swift */,
 				E88D58792621C607004461E5 /* WelcomeViewController.swift */,
@@ -193,14 +187,14 @@
 				E86A812525E28FF000C9F1D0 /* Model */,
 				E86A812425E28FD400C9F1D0 /* View */,
 				E86A812325E28F9600C9F1D0 /* Controller */,
-				E8DB192C25E1517B004FB85E /* AppDelegate.swift */,
-				E8DB192E25E1517B004FB85E /* SceneDelegate.swift */,
 				E8C7D1E62626039800239FFA /* Constants.swift */,
+				E8E5B7AF270388330046D3F8 /* Extentions.swift */,
+				E8DB192E25E1517B004FB85E /* SceneDelegate.swift */,
+				E8DB192C25E1517B004FB85E /* AppDelegate.swift */,
 				E8DB193725E1517C004FB85E /* LaunchScreen.storyboard */,
 				E8DB193A25E1517C004FB85E /* Info.plist */,
 				E861BEF82624CB1400664867 /* Assets.xcassets */,
 				E8881E54261222AF009EE792 /* GoogleService-Info.plist */,
-				E8E5B7AF270388330046D3F8 /* Extentions.swift */,
 			);
 			path = dictionary;
 			sourceTree = "<group>";
@@ -466,14 +460,12 @@
 				E8AB413A264D9D8500896F82 /* RegisterViewController.swift in Sources */,
 				E8E5B7B0270388330046D3F8 /* Extentions.swift in Sources */,
 				E88D587A2621C608004461E5 /* WelcomeViewController.swift in Sources */,
-				E8E5B7AC27035CF10046D3F8 /* ENGTableViewCell.swift in Sources */,
-				E8C6E1C226455FC100B0FE6D /* RUSViewController.swift in Sources */,
-				E8DB193125E1517B004FB85E /* ENGViewController.swift in Sources */,
+				E8E5B7AC27035CF10046D3F8 /* LibraryTableViewCell.swift in Sources */,
+				E8DB193125E1517B004FB85E /* ViewController.swift in Sources */,
 				E8D59D312654482400E5187D /* Message.swift in Sources */,
 				E8DB192D25E1517B004FB85E /* AppDelegate.swift in Sources */,
 				E8DB192F25E1517B004FB85E /* SceneDelegate.swift in Sources */,
 				E8C7D1E72626039800239FFA /* Constants.swift in Sources */,
-				E89BABF626E2122000C94634 /* RUSTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 extension UITextField {
     
     func shakeAndHighlight() {
@@ -20,6 +21,24 @@ extension UITextField {
 
             layer.backgroundColor = CGColor.init(red: 255, green: 0, blue: 0, alpha: 1)
         }
-    
-    
 }
+
+struct TextFieldFunctionality {
+
+    func wrongAnswer(textField: UITextField){
+        textField.backgroundColor = UIColor.red
+        textField.shakeAndHighlight()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            textField.backgroundColor = UIColor.clear
+            textField.text = ""
+        }
+    }
+
+    func rightAnswwer(textField: UITextField) {
+        textField.backgroundColor = UIColor.green
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            textField.backgroundColor = UIColor.clear
+        }
+    }
+}
+

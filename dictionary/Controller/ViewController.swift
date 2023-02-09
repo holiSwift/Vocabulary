@@ -11,20 +11,25 @@ import FirebaseFirestore
 import FirebaseDatabase
 
 
-class ENGViewController: UIViewController {
+class ViewController: UIViewController {
     
     @IBOutlet weak var mainTextLabel: UILabel!
     @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var translateTextField: UITextField!
+    
+    let functionality = TextFieldFunctionality()
 
     var ref: DatabaseReference?
     let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+
+        translateTextField.backgroundColor = .clear
+        translateTextField.layer.borderWidth = 2
+        translateTextField.layer.borderColor =  UIColor(white: 1.0, alpha: 0.1).cgColor
         
         checkButton.isHidden = true
         translateTextField.isHidden = true
@@ -38,10 +43,25 @@ class ENGViewController: UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+   
+    @IBAction func pressCheckButton(_ sender: UIButton) {
+        isTranslateRight()
+    }
+}
+
+
+extension ViewController {
     
     enum Error {
         case invalidUser
         case noDocumentFound
+    }
+    
+    func isStartView(isInitialView: Bool, mainlLabel: String?, textField: UITextField, checkButton: UIButton){
+        checkButton.isHidden = isInitialView
+        textField.isHidden = isInitialView
+        mainTextLabel.adjustsFontSizeToFitWidth = true
+        mainTextLabel.text = mainlLabel ?? "Add your word to book"
     }
 
     func fetchDocument(onError: @escaping (Error) -> (), completion: @escaping (DocumentSnapshot?) -> ())  {
@@ -49,7 +69,7 @@ class ENGViewController: UIViewController {
             onError(.invalidUser)
             return
         }
-        db.collection(K.FStore.collectionName).document(currentUser).getDocument { (document, error) in
+        db.collection(Constans.FStore.collectionName).document(currentUser).getDocument { (document, error) in
             if let error = error {
                 onError(.noDocumentFound)
                 print(error)
@@ -58,55 +78,45 @@ class ENGViewController: UIViewController {
             }
         }
     }
-   
-    private func hideShowViews(shouldHide: Bool, mainTextLable: String?) {
-        checkButton.isHidden = shouldHide
-        translateTextField.isHidden = shouldHide
-        mainTextLabel.adjustsFontSizeToFitWidth = true
-        mainTextLabel.text = mainTextLable ?? "Add your first word to book"
-    }
-    
     
     func updateUI() {
-        
+
         translateTextField.text = ""
         translateTextField.backgroundColor = UIColor.clear
-        
+
         fetchDocument { [weak self] error in
-            self?.hideShowViews(shouldHide: true, mainTextLable: nil)
+            self?.isStartView(isInitialView: true, mainlLabel: nil, textField: self!.translateTextField, checkButton: self!.checkButton)
         } completion: { [weak self] document in
-            
+
             if let userFirebaseDocument = document, userFirebaseDocument.exists {
-                self?.hideShowViews(shouldHide: false, mainTextLable: userFirebaseDocument.data()?.keys.randomElement())
+                self?.isStartView(isInitialView: false, mainlLabel: userFirebaseDocument.data()?.keys.randomElement(), textField: self!.translateTextField, checkButton: self!.checkButton)
             } else {
-                self?.hideShowViews(shouldHide: true, mainTextLable: nil)
+                self?.isStartView(isInitialView: true, mainlLabel: nil, textField: self!.translateTextField, checkButton: self!.checkButton)
             }
         }
     }
-      
-    @IBAction func pressCheckButton(_ sender: UIButton) {
-        
+    
+    func isTranslateRight(){
         fetchDocument { error in
         } completion: { [weak self] document in
             
             let currenetTextLable = self!.mainTextLabel.text!
             let firebaseValue = document!.get(currenetTextLable) as? String
-            let currentTranslateTextField = self!.translateTextField.text!.lowercased().trimmingCharacters(in: .whitespaces)
+            let currentTranslate = self!.translateTextField.text!.lowercased().trimmingCharacters(in: .whitespaces)
 
-            if currentTranslateTextField == firebaseValue {
-                self!.translateTextField.backgroundColor = UIColor.green
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
-                    self!.translateTextField.backgroundColor = UIColor.clear
-                    self!.updateUI()
-                }
+            if currentTranslate == firebaseValue {
+                self!.functionality.rightAnswwer(textField: self!.translateTextField)
+                self!.updateUI()
             } else {
-                self!.translateTextField.backgroundColor = UIColor.red
-                self!.translateTextField.shakeAndHighlight()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
-                    self!.translateTextField.backgroundColor = UIColor.clear
-                    self!.translateTextField.text = ""
-                }
+                self!.functionality.wrongAnswer(textField: self!.translateTextField)
             }
         }
     }
 }
+
+
+
+
+
+
+

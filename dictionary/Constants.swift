@@ -6,7 +6,7 @@
 //  Copyright © 2019 Angela Yu. All rights reserved.
 //
 
-struct K {
+struct Constans {
    
     struct FStore {
         static let collectionName = "UserVocabulary"

@@ -19,6 +19,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextfield.backgroundColor = .clear
+        emailTextfield.layer.borderWidth = 2
+        emailTextfield.layer.borderColor =  UIColor(white: 1.0, alpha: 0.1).cgColor
+        passwordTextfield.backgroundColor = .clear
+        passwordTextfield.layer.borderWidth = 2
+        passwordTextfield.layer.borderColor =  UIColor(white: 1.0, alpha: 0.1).cgColor
         //        Hidding the keyboard by taping the view
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -42,14 +48,10 @@ class LoginViewController: UIViewController {
                     }
                 } else {
                     self.performSegue(withIdentifier: "LoginSegue", sender: self)
-                    
                 }
             }
         }
-        
     }
-
-
 }
 
 
